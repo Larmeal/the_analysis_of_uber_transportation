@@ -64,7 +64,7 @@ df_datetime = df_datetime.drop_duplicates()
 
 # Change format datetime
 df_datetime['tpep_pickup_datetime'] = df_datetime['tpep_pickup_datetime'].dt.strftime('%Y-%m-%d %H:%M:%S')
-df_datetime['tpep_dropoff_datetime'] = df_datetime['tpep_dropoff_datetime'].dt.strftime('%Y-%m-%d %I:%M:%S')
+df_datetime['tpep_dropoff_datetime'] = df_datetime['tpep_dropoff_datetime'].dt.strftime('%Y-%m-%d %H:%M:%S')
 
 # Create datetime_id column
 df_datetime['datetime_id'] = range(1, len(df_datetime) + 1)
